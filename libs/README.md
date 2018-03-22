@@ -1,4 +1,4 @@
-# codeQ
+# codeQ/libs
 
 Project for standalone libraries that can be loaded in a q session for :
 
