@@ -6,6 +6,12 @@
 
 \d .str
 
+ls:{neg[x]$string y}
+//ls[3;12]
+
+lz:{"0"^neg[x]$string y}
+//lz[4;72]
+
 toUpper:upper
 /toUpper["To Upper Case"]
 /toUpper[`Upper]
