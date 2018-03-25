@@ -4,6 +4,7 @@
 @docEnd
 \
 
+\d .str
 
 toUpper:upper
 /toUpper["To Upper Case"]
