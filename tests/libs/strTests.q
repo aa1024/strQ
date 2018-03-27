@@ -8,6 +8,8 @@
 
 import `str
 
+"sWAPcASE"~.str.sc["SwapCase"]
+
 " 12"~.str.sf[3;12]
 
 "0072"~.str.zf[4;72]
