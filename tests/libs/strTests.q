@@ -8,9 +8,9 @@
 
 import `str
 
-" 12"~.str.ls[3;12]
+" 12"~.str.sf[3;12]
 
-"0072"~.str.lz[4;72]
+"0072"~.str.zf[4;72]
 
 "TO UPPER CASE"~.str.tu["To Upper Case"]
 `UPPER~.str.tu[`Upper]
