@@ -1,11 +1,14 @@
 /  
 @docStart
 @desc String helper functions
-@func sf,zf,tu,tl,tstr
+@func sc,sf,zf,tu,tl,tstr
 @docEnd
 \
 
 \d .str
+
+/swap case
+sc:{?[x=lower x;upper x;lower x]}
 
 /space fill
 sf:{neg[x]$string y}
