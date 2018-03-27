@@ -1,16 +1,17 @@
 /  
 @docStart
 @desc String helper functions
+@func sf,zf,tu,tl,tstr
 @docEnd
 \
 
 \d .str
 
-/Leading space
-ls:{neg[x]$string y}
+/space fill
+sf:{neg[x]$string y}
 
-/leading zero
-lz:{"0"^neg[x]$string y}
+/zero fill
+zf:{"0"^neg[x]$string y}
 
 /to upper
 tu:upper
