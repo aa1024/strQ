@@ -1,7 +1,7 @@
 /  
 @docStart
 @desc String helper functions
-@func sc,sf,zf,tu,tl,tstr,cc
+@func sc,sf,zf,tu,tl,tstr,cc,ucc
 @docEnd
 \
 
@@ -13,6 +13,9 @@ cc:{
     x:?[-1=deltas s:" "=x; upper x;lower x ];  
     x where not[s]
  }
+
+/camel case to space seperated - uncamelcase
+ucc:{ lower trim raze cut[0,where[x=upper[x]] ; x],\:" " }
 
 /swap case
 sc:{?[x=lower x;upper x;lower x]}
