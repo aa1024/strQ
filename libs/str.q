@@ -14,10 +14,8 @@ cc:{
     x where not[s]
  }
 
-
 /swap case
 sc:{?[x=lower x;upper x;lower x]}
-
 
 /space fill
 sf:{neg[x]$string y}
