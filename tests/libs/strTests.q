@@ -8,6 +8,8 @@
 
 import `str
 
+"camelCaseFunctionTest"~.str.cc["camel-case_function_TEST"]
+
 "sWAPcASE"~.str.sc["SwapCase"]
 
 " 12"~.str.sf[3;12]
