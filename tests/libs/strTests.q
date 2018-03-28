@@ -7,9 +7,15 @@
 \d .strTests
 
 import `str
-
+.str
+//Camelcase test
 "camelCaseFunctionTest"~.str.cc["camel-case_function_TEST"]
+"anotherTest"~.str.cc["Another Test"]
 
+//Uncamelcase test
+"add space between camel case"~.str.ucc["addSpaceBetweenCamelCase"]
+
+//swapcase test
 "sWAPcASE"~.str.sc["SwapCase"]
 
 " 12"~.str.sf[3;12]
