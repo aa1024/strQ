@@ -2,7 +2,7 @@
 
 /@function init @desc Creates a local table and stores the test results generated in @@assert function
 /@returns     @desc 
-init:{ .unittest.report:([] fuct:`$() ; params:() ; expRes:();actRes:() ; testRes:`boolean$() ); }
+init:{ .unittest.report:([] fuct:`$() ; params:() ; exp_res:();act_res:() ; test_res:`boolean$() ); }
 
 init[];
 
