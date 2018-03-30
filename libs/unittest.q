@@ -2,7 +2,11 @@
 
 init:{ .unittest.results:([] fuct:`$() ; params:() ; expRes:();actRes:() ; testRes:`boolean$() ); }
 
-/@params function name, params,results
+/@function assert @desc assert function 
+/   @param fn   @desc function name
+/   @param p    @desc parameters to the function
+/   @result r   @desc expected results
+/@returns tr    @desc test results
 assert:{[fn;p;r]
     res:$[1=count p;@[ value fn; first p;{`$x}] ;.[value fn; p ;{`$x}]];
     tr:res~r;
@@ -10,7 +14,7 @@ assert:{[fn;p;r]
     tr
  }
 
-
+results:{ :.unittest.results }
    
    
   
