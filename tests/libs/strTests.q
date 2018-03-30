@@ -6,8 +6,8 @@
 
 \d .strTests
 
-import `str
-.str
+import `str`unittest
+
 //Camelcase test
 "camelCaseFunctionTest"~.str.cc["camel-case_function_TEST"]
 "anotherTest"~.str.cc["Another Test"]
