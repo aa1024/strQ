@@ -15,8 +15,12 @@ import `str
 //Uncamelcase test
 "add space between camel case"~.str.ucc["addSpaceBetweenCamelCase"]
 
+//underscore
+"underscore_seperated_text"~.str.us["underscoreSeperatedText"]
+
 //swapcase test
 "sWAPcASE"~.str.sc["SwapCase"]
+
 
 " 12"~.str.sf[3;12]
 
