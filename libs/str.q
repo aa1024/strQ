@@ -1,11 +1,14 @@
 /  
 @docStart
 @desc String helper functions
-@func sc,sf,zf,tu,tl,tstr,cc,ucc
+@func sc,sf,zf,tu,tl,tstr,cc,ucc,us
 @docEnd
 \
 
 \d .str
+
+/To underscore seperated 
+us:{lower "_"sv cut[0,where[x=upper x]; x]}
 
 /camel case
 cc:{ 
