@@ -2,7 +2,7 @@
 
 init:{ .unittest.results:([] fuct:`$() ; params:() ; expRes:();actRes:() ; testRes:`boolean$() ); }
 
-/function name, params,results
+/@params function name, params,results
 assert:{[fn;p;r]
     res:$[1=count p;@[ value fn; first p;{`$x}] ;.[value fn; p ;{`$x}]];
     tr:res~r;
