@@ -21,9 +21,9 @@ import `str`unittest;
 //swapcase test
 .unittest.assert[`.str.sc;enlist "SwapCase";"sWAPcASE"];
 
-.unittest.assert[`.str.sf;enlist (3;12);" 12"];
+.unittest.assert[`.str.sf; (3;12);" 12"];
 
-.unittest.assert[`.str.zf;enlist (4;72);"0072"];
+.unittest.assert[`.str.zf;(4;72);"0072"];
 
 .unittest.assert[`.str.tu;enlist "To Upper Case";"TO UPPER CASE"];
 .unittest.assert[`.str.tu;enlist `Upper;`UPPER];
@@ -39,3 +39,5 @@ import `str`unittest;
 .unittest.assert[`.str.tstr;enlist 10;"10"];
 .unittest.assert[`.str.tstr;enlist(0b;1i;2j;3f;`4;"5");"(0b;1i;2;3f;`4;\"5\")"];
 .unittest.assert[`.str.tstr;enlist ([] i: 1 2 3 4);"+(,`i)!,1 2 3 4"];
+
+.unittest.results[]
