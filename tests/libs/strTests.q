@@ -6,37 +6,36 @@
 
 \d .strTests
 
-import `str`unittest
+import `str`unittest;
 
 //Camelcase test
-"camelCaseFunctionTest"~.str.cc["camel-case_function_TEST"]
-"anotherTest"~.str.cc["Another Test"]
+.unittest.assert[`.str.cc; enlist "camel-case_function_TEST" ; "camelCaseFunctionTest"];
+.unittest.assert[`.str.cc;enlist "Another Test";"anotherTest"];
 
 //Uncamelcase test
-"add space between camel case"~.str.ucc["addSpaceBetweenCamelCase"]
+.unittest.assert[`.str.ucc;enlist "addSpaceBetweenCamelCase";"add space between camel case" ];
 
 //underscore
-"underscore_seperated_text"~.str.us["underscoreSeperatedText"]
+.unittest.assert[`.str.us;enlist "underscoreSeperatedText";"underscore_seperated_text"];
 
 //swapcase test
-"sWAPcASE"~.str.sc["SwapCase"]
+.unittest.assert[`.str.sc;enlist "SwapCase";"sWAPcASE"];
+
+.unittest.assert[`.str.sf;enlist (3;12);" 12"];
+
+.unittest.assert[`.str.zf;enlist (4;72);"0072"];
+
+.unittest.assert[`.str.tu;enlist "To Upper Case";"TO UPPER CASE"];
+.unittest.assert[`.str.tu;enlist `Upper;`UPPER];
 
 
-" 12"~.str.sf[3;12]
-
-"0072"~.str.zf[4;72]
-
-"TO UPPER CASE"~.str.tu["To Upper Case"]
-`UPPER~.str.tu[`Upper]
+.unittest.assert[`.str.tl;enlist "To Lower Case"; "to lower case"];
+.unittest.assert[`.str.tl;enlist `Lower;`lower];
 
 
-"to lower case"~.str.tl["To Lower Case"]
-`lower~.str.tl[`Lower]
-
-
-"String"~.str.tstr[`$"String"]
-enlist["c"]~.str.tstr[`$"c"]
-enlist["s"]~.str.tstr[`s]
-"10"~.str.tstr[10]
-"(0b;1i;2;3f;`4;\"5\")"~.str.tstr[(0b;1i;2j;3f;`4;"5")]
-"+(,`i)!,1 2 3 4"~.str.tstr([] i: 1 2 3 4)
+.unittest.assert[`.str.tstr;enlist`$"String";"String"];
+.unittest.assert[`.str.tstr;enlist`$"c";enlist["c"]];
+.unittest.assert[`.str.tstr;enlist`s;enlist["s"]];
+.unittest.assert[`.str.tstr;enlist 10;"10"];
+.unittest.assert[`.str.tstr;enlist(0b;1i;2j;3f;`4;"5");"(0b;1i;2;3f;`4;\"5\")"];
+.unittest.assert[`.str.tstr;enlist ([] i: 1 2 3 4);"+(,`i)!,1 2 3 4"];
