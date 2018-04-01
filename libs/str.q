@@ -42,12 +42,12 @@ sf:{neg[x]$string y}
 /@returns String left padded with zero
 zf:{"0"^neg[x]$string y}
 
-/to upper
+/@function tu @desc to upper
 tu:upper
 
-/to lower
+/@function tl @desc to lower
 tl:lower
 
-/to string
+/@function tstr @desc to string
 /Convert the nested structures to string using -3! 
 tstr:{:$[10h=type x; x;0>type x;string x;-3!x]}
