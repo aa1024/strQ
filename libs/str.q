@@ -31,10 +31,17 @@ ucc:{ lower trim raze cut[0,where[x=upper[x]] ; x],\:" " }
 /@returns String with case swapped
 sc:{?[x=lower x;upper x;lower x]}
 
-/space fill
+/@function sf @desc Space fill
+/   @param int
+/   @param String
+/@returns String left padded with space
 sf:{neg[x]$string y}
 
-/zero fill
+
+/@function sf @desc zero fill
+/   @param int
+/   @param String
+/@returns String left padded with zero
 zf:{"0"^neg[x]$string y}
 
 /to upper
