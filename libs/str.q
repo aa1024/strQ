@@ -7,17 +7,23 @@
 
 \d .str
 
-/To underscore seperated 
+/@function us @desc Camel case to Underscore separated 
+/   @param string in camel case form
+/@returns underscore separated text
 us:{lower "_"sv cut[0,where[x=upper x]; x]}
 
-/camel case
+/@function cc @desc To camel case
+/   @param String containing underscores, hyphens or spaces
+/@returns Camel case string
 cc:{ 
     x:trim ssr[;;" "]/[x;("-";"_")]; //replace hyphens and underscore
     x:?[-1=deltas s:" "=x; upper x;lower x ];  
     x where not[s]
  }
 
-/camel case to space seperated - uncamelcase
+/@function ucc @desc Uncamelcase - Camel case to space separated text
+/   @param String Camel case string
+/@returns Space separated string
 ucc:{ lower trim raze cut[0,where[x=upper[x]] ; x],\:" " }
 
 /swap case
