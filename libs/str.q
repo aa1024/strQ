@@ -1,8 +1,6 @@
 /  
-@docStart
 @desc String helper functions
-@func sc,sf,zf,tu,tl,tstr,cc,ucc,us
-@docEnd
+@functions sc,sf,zf,tu,tl,tstr,cc,ucc,us
 \
 
 \d .str
