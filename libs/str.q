@@ -26,7 +26,9 @@ cc:{
 /@returns Space separated string
 ucc:{ lower trim raze cut[0,where[x=upper[x]] ; x],\:" " }
 
-/swap case
+/@function sc @desc Swap case
+/   @param String
+/@returns String with case swapped
 sc:{?[x=lower x;upper x;lower x]}
 
 /space fill
