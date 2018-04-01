@@ -1,7 +1,5 @@
 /  
-@docStart
 @desc String helper functions tests
-@docEnd
 \
 
 \d .strTests
