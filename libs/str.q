@@ -8,6 +8,8 @@
 
 sc:{ "_"sv cut[0,where[x=upper x]; x] }
 
+tc:{ "-"sv cut[0,where[x=upper x]; x] }
+
 
 /@function us @desc Camel case to lower case underscore separated 
 /   @param string in camel case form
