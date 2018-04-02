@@ -17,7 +17,7 @@ import `str`unittest;
 .unittest.assert[`.str.us;enlist "underscoreSeperatedText";"underscore_seperated_text"];
 
 //swapcase test
-.unittest.assert[`.str.sc;enlist "SwapCase";"sWAPcASE"];
+.unittest.assert[`.str.fc;enlist "FlipCase";"fLIPcASE"];
 
 .unittest.assert[`.str.sf; (3;12);" 12"];
 
