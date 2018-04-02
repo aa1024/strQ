@@ -1,14 +1,18 @@
 /  
 @desc String helper functions
-@functions sc,sf,zf,tu,tl,tstr,cc,ucc,us
+@functions fc,sf,zf,tu,tl,tstr,cc,ucc,us (snakecase, startcase, traincase )
 \
 
 \d .str
 
-/@function us @desc Camel case to Underscore separated 
+
+sc:{ "_"sv cut[0,where[x=upper x]; x] }
+
+
+/@function us @desc Camel case to lower case underscore separated 
 /   @param string in camel case form
 /@returns underscore separated text
-us:{lower "_"sv cut[0,where[x=upper x]; x]}
+us:{lower sc[x]}
 
 /@function cc @desc To camel case
 /   @param String containing underscores, hyphens or spaces
@@ -24,10 +28,10 @@ cc:{
 /@returns Space separated string
 ucc:{ lower trim raze cut[0,where[x=upper[x]] ; x],\:" " }
 
-/@function sc @desc Swap case
+/@function fc @desc Swap case
 /   @param String
 /@returns String with case swapped
-sc:{?[x=lower x;upper x;lower x]}
+fc:{?[x=lower x;upper x;lower x]}
 
 /@function sf @desc Space fill
 /   @param int
