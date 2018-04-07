@@ -6,6 +6,9 @@
 
 import `str`unittest;
 
+//Snakecase test
+.unittest.assert[`.str.sc; enlist "An example of Snake case" ; "An_example_of_Snake_case"];
+
 //Camelcase test
 .unittest.assert[`.str.cc; enlist "camel-case_function_TEST" ; "camelCaseFunctionTest"];
 .unittest.assert[`.str.cc;enlist "Another Test";"anotherTest"];
