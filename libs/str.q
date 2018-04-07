@@ -5,8 +5,7 @@
 
 \d .str
 
-
-sc:{ "_"sv cut[0,where[x=upper x]; x] }
+sc:{ ssr[x;" ";"_"] }
 
 tc:{ "-"sv cut[0,where[x=upper x]; x] }
 
