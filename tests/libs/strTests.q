@@ -28,6 +28,7 @@ import `str`unittest;
 //Space Fill Test
 .unittest.assert[`.str.sf; (3;12);" 12"];
 
+//Zero Fill Test
 .unittest.assert[`.str.zf;(4;72);"0072"];
 
 .unittest.assert[`.str.tu;enlist "To Upper Case";"TO UPPER CASE"];
