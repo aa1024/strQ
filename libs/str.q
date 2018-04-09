@@ -10,6 +10,9 @@
 /@returns underscore separated text without any case changes.
 sc:{ ssr[x;" ";"_"] }
 
+/@function tc @desc Traincase : hyphen separated text , but the case is preserverd 
+/   @param string 
+/@returns hyphen separated text without any case changes.
 tc:{ ssr[x;" ";"-"] }
 
 
