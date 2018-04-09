@@ -5,9 +5,12 @@
 
 \d .str
 
+/@function sc @desc Snakecase : underscore separated text , but the case is preserverd 
+/   @param string 
+/@returns underscore separated text without any case changes.
 sc:{ ssr[x;" ";"_"] }
 
-tc:{ "-"sv cut[0,where[x=upper x]; x] }
+tc:{ ssr[x;" ";"-"] }
 
 
 /@function us @desc Camel case to lower case underscore separated 
