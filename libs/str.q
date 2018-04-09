@@ -15,7 +15,6 @@ sc:{ ssr[x;" ";"_"] }
 /@returns hyphen separated text without any case changes.
 tc:{ ssr[x;" ";"-"] }
 
-
 /@function us @desc Camel case to lower case underscore separated 
 /   @param string in camel case form
 /@returns underscore separated text
