@@ -26,10 +26,12 @@ import `str`unittest;
 .unittest.assert[`.str.fc;enlist "FlipCase";"fLIPcASE"];
 
 //Space Fill Test
-.unittest.assert[`.str.sf; (3;12);" 12"];
+.unittest.assert[`.str.sfl; (3;12);" 12"];
+.unittest.assert[`.str.sfr; (3;12);"12 "];
 
 //Zero Fill Test
-.unittest.assert[`.str.zf;(4;72);"0072"];
+.unittest.assert[`.str.zfl;(4;72);"0072"];
+.unittest.assert[`.str.zfr;(4;72);"7200"];
 
 .unittest.assert[`.str.tu;enlist "To Upper Case";"TO UPPER CASE"];
 .unittest.assert[`.str.tu;enlist `Upper;`UPPER];
