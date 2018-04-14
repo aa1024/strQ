@@ -49,13 +49,20 @@ sfl:{neg[x]$string y}
 /   @param int
 /   @param String
 /@returns String right padded with space
-sfr:{reverse neg[x]$reverse string y}
+sfr:{x]$reverse string y}
 
 /@function zfl @desc zero fill
 /   @param int
 /   @param String
 /@returns String left padded with zero
 zfl:{"0"^neg[x]$string y}
+
+
+/@function zfr @desc zero fill from right
+/   @param int
+/   @param String
+/@returns String right padded with zero
+zfl:{"0"^reverse neg[x]$reverse string y}
 
 /@function tu @desc to upper
 tu:upper
