@@ -45,6 +45,11 @@ fc:{?[x=lower x;upper x;lower x]}
 /@returns String left padded with space
 sfl:{neg[x]$string y}
 
+/@function sfr @desc Space fill from right 
+/   @param int
+/   @param String
+/@returns String right padded with space
+sfr:{reverse neg[x]$reverse string y}
 
 /@function zfl @desc zero fill
 /   @param int
