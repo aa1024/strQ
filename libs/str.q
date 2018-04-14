@@ -1,6 +1,6 @@
 /  
 @desc String helper functions
-@functions fc,sf,zf,tu,tl,tstr,cc,ucc,us (snakecase, startcase, traincase )
+@functions fc,sfl,zfl,tu,tl,tstr,cc,ucc,us (snakecase, startcase, traincase )
 \
 
 \d .str
@@ -39,18 +39,18 @@ ucc:{ lower trim raze cut[0,where[x=upper[x]] ; x],\:" " }
 /@returns String with case swapped
 fc:{?[x=lower x;upper x;lower x]}
 
-/@function sf @desc Space fill
+/@function sfl @desc Space fill
 /   @param int
 /   @param String
 /@returns String left padded with space
-sf:{neg[x]$string y}
+sfl:{neg[x]$string y}
 
 
-/@function sf @desc zero fill
+/@function zfl @desc zero fill
 /   @param int
 /   @param String
 /@returns String left padded with zero
-zf:{"0"^neg[x]$string y}
+zfl:{"0"^neg[x]$string y}
 
 /@function tu @desc to upper
 tu:upper
