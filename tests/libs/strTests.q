@@ -6,6 +6,8 @@
 
 import `str`unittest;
 
+.unittest.init[];
+
 //Snakecase test
 .unittest.assert[`.str.sc; enlist "An example of Snake case" ; "An_example_of_Snake_case"];
 
@@ -28,6 +30,9 @@ import `str`unittest;
 //Space Fill Test
 .unittest.assert[`.str.sfl; (3;12);" 12"];
 .unittest.assert[`.str.sfr; (3;12);"12 "];
+
+.unittest.assert[`.str.sflb; enlist (`a`bbb`cc);("  a";"bbb";" cc")];
+.unittest.assert[`.str.sfrb; enlist (`a`bbb`cc);("a  ";"bbb";"cc ")];
 
 //Zero Fill Test
 .unittest.assert[`.str.zfl;(4;72);"0072"];
