@@ -51,6 +51,14 @@ sfl:{neg[x]$string y}
 /@returns String right padded with space
 sfr:{x$string y}
 
+/@function sflb @desc Space fill from left for list of strings 
+/   @param int
+/   @param String
+/@returns String left padded with space
+sflb:{sfl[max count each string x] each x}
+
+
+
 /@function zfl @desc zero fill
 /   @param int
 /   @param String
