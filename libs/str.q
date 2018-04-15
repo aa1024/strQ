@@ -57,6 +57,11 @@ sfr:{x$string y}
 /@returns String left padded with space
 sflb:{sfl[max count each string x] each x}
 
+/@function sfrb @desc Space fill from right for list of strings 
+/   @param int
+/   @param String
+/@returns String right padded with space
+sfrb:{sfr[max count each string x] each x}
 
 
 /@function zfl @desc zero fill
