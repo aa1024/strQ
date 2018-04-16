@@ -1,0 +1,1 @@
+<html><head><style>a{text-decoration:none}a:link{color:024C7E}a:visited{color:024C7E}a:active{color:958600}body{font:10pt verdana;text-align:justify}</style></head><body>@function init @desc Creates a local table and stores the test results generated in @@assert function</body></html>
