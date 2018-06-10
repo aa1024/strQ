@@ -2,8 +2,8 @@
 
 String helper functions - flip case, space fill, zero fill, camelcase, uncamelcase, underscore separated, snakecase, startcase, traincase
 
-stc
-~~~
+## stc
+
 
 startcase "an example string" -> "An Example String"
 
@@ -15,11 +15,10 @@ startcase "an example string" -> "An Example String"
 
     q).str.stc"start-case string"
 
-.. _lib-str-sc-label:
 
 
-sc
-~~
+## sc
+
 
 Snakecase : underscore separated text , but the case is preserverd
 
@@ -36,7 +35,7 @@ Snakecase : underscore separated text , but the case is preserverd
 .. _lib-str-tc-label:
 
 
-tc
+## tc
 ~~
 
 Traincase : hyphen separated text , but the case is preserverd
@@ -54,7 +53,7 @@ Traincase : hyphen separated text , but the case is preserverd
 .. _lib-str-us-label:
 
 
-us
+## us
 ~~
 
 Camel case to lower case underscore separated
@@ -72,7 +71,7 @@ Camel case to lower case underscore separated
 .. _lib-str-cc-label:
 
 
-cc
+## cc
 ~~
 
 To camel case
@@ -90,7 +89,7 @@ To camel case
 .. _lib-str-ucc-label:
 
 
-ucc
+## ucc
 ~~~
 
 Uncamelcase - Camel case to space separated text , case is preserved
@@ -108,7 +107,7 @@ Uncamelcase - Camel case to space separated text , case is preserved
 .. _lib-str-fc-label:
 
 
-fc
+## fc
 ~~
 
 Swap/Flip case
@@ -126,7 +125,7 @@ Swap/Flip case
 .. _lib-str-sfl-label:
 
 
-sfl
+## sfl
 ~~~
 
 Space fill
@@ -145,7 +144,7 @@ Space fill
 .. _lib-str-sfr-label:
 
 
-sfr
+## sfr
 ~~~
 
 Space fill from right
@@ -164,7 +163,7 @@ Space fill from right
 .. _lib-str-sflb-label:
 
 
-sflb
+## sflb
 ~~~~
 
 Space fill from left for list of strings
@@ -183,7 +182,7 @@ Space fill from left for list of strings
 .. _lib-str-sfrb-label:
 
 
-sfrb
+## sfrb
 ~~~~
 
 Space fill from right for list of strings
@@ -202,7 +201,7 @@ Space fill from right for list of strings
 .. _lib-str-zfl-label:
 
 
-zfl
+## zfl
 ~~~
 
 zero fill
@@ -221,7 +220,7 @@ zero fill
 .. _lib-str-zfr-label:
 
 
-zfr
+## zfr
 ~~~
 
 zero fill from right
@@ -240,7 +239,7 @@ zero fill from right
 .. _lib-str-strif-label:
 
 
-strif
+## strif
 ~~~~~
 
 handle the simple case otherwise flaten it to string
