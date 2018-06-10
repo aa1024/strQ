@@ -92,7 +92,7 @@ zfl:{"0"^neg[x]$string y}
 zfr:{"0"^x$string y}
 /# @code q).str.zfr (4;72)
 
-/# @function strif handle the simple case otherwise flaten it to string
+/# @function strif Converts the kdb objects to plain string
 /#    @param x String
 /# @return Converts the kdb objects to plain string 
 strif:{$[10h=t:type x;x; t=11h;string x;t<0;string x;.Q.s1 x]}
