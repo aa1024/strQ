@@ -8,71 +8,42 @@ startcase "an example string" -> "An Example String"
     q).str.stc"start-case string"
 
 ## sc
-Snakecase : underscore separated text , but the case is preserverd
-
-
+Snakecase ; underscore separated text, but the case is preserverd
 
     q).str.sc "An example of Snake case"
 
 
-
-
 ## tc
-
 Traincase : hyphen separated text , but the case is preserverd
-
 
     q).str.tc"An example of Train case"
 
-
-
 ## us
-
 Camel case to lower case underscore separated
-
-
 
     q).str.us"spaceSeparated text"
 
-
-
 ## cc
-
 To camel case
-
-
-
 
     q).str.cc"underscore_separated_text"
 
-
-
 ## ucc
-~~~
-
 Uncamelcase - Camel case to space separated text , case is preserved
-
 
     q).str.ucc"addSpaceInCamelCase"
 
 
-
 ## fc
-
 Swap/Flip case
-
 
     q).str.fc"FlipCase"
 
 
-
 ## sfl
-
 Space fill
 
-
     q).str.sfl (3;12)
-
 
 
 ## sfr
