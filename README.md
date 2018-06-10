@@ -2,8 +2,6 @@
 
 ## codeQ/libs
 
-It will take few days for me to develop a farework where the intial following points will work smoothly. 
-
 Project for standalone libraries that can be loaded in a q session for :
 
 1. Importing a library
