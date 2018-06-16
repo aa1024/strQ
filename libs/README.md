@@ -1,3 +1,0 @@
-# codeQ/libs
-
-
