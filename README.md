@@ -32,18 +32,15 @@ Uncamelcase - Camel case to space separated text , case is preserved
 
     q).str.ucc"addSpaceInCamelCase"
 
-
-## fc
-Swap/Flip case
-
-    q).str.fc"FlipCase"
-
-
 ## sfl
 Space fill
 
     q).str.sfl (3;12)
 
+## fc
+Swap/Flip case
+
+    q).str.fc"FlipCase"
 
 ## sfr
 Space fill from right
