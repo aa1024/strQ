@@ -42,35 +42,30 @@ Swap/Flip case
 
     q).str.fc"FlipCase"
 
-## sfr
-Space fill from right
-
-    q).str.sfr (3;12)
-
-
-## sflb
-Space fill from left for list of strings
-
-q).str.sflb (`a`bbb`cc)
-
-
-## sfrb
-Space fill from right for list of strings
-
-    q).str.sfrb (`a`bbb`cc)
-
-
 ## zfl
 zero fill
 
     q).str.zfl (4;72)
-
 
 ## zfr
 zero fill from right
 
     q).str.zfr (4;72)
 
+## sfr
+Space fill from right
+
+    q).str.sfr (3;12)
+
+## sflb
+Space fill from left for list of strings
+
+    q).str.sflb (`a`bbb`cc)
+
+## sfrb
+Space fill from right for list of strings
+
+    q).str.sfrb (`a`bbb`cc)
 
 ## strif
 Converts the kdb objects to plain string
