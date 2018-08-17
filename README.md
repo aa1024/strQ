@@ -12,7 +12,6 @@ Snakecase ; underscore separated text, but the case is preserverd
 
     q).str.sc "An example of Snake case"
 
-
 ## tc
 Traincase : hyphen separated text , but the case is preserverd
 
